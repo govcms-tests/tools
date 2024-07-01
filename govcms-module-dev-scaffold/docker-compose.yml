@@ -1,0 +1,10 @@
+services:
+  govcms:
+    env_file: ".env"
+    build:
+      dockerfile: $PWD/Dockerfile
+    ports:
+      - "8888:80"
+    volumes:
+      - .:/app/web/modules/develop/minisite
+      - /var/www/html/sites
