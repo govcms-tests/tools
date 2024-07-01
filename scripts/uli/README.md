@@ -2,15 +2,21 @@
 
 Make it executable:
 
-`chmod +x uli.sh`
+```shell
+chmod +x uli.sh
+```
 
 To be able to call this script without the extension anywhere, create an alias:
 
-`alias uli="uli.sh"`
+```shell
+alias uli="uli.sh"
+```
 
 and add its location to PATH:
 
-`export PATH="$PATH:<path to script directory>"`
+```shell
+export PATH="$PATH:<path to script directory>"
+```
 
 ## Compatability
 
