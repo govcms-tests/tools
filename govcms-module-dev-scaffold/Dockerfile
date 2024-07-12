@@ -30,7 +30,7 @@ RUN set -eux; \
 COPY --from=base --chown=govcms:govcms /app /app
 # Set environment variables
 ENV SIMPLETEST_BASE_URL="http://localhost"
-ENV SIMPLETEST_DB='mysql://drupal:drupal@mariadb/drupal'
+ENV SIMPLETEST_DB='sqlite://sites/default/files/.ht.sqlite'
 
 # Set the working directory to "/app/"
 WORKDIR /app/
