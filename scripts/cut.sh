@@ -6,6 +6,7 @@ if [ -z "$1" ]; then
     exit
 fi
 
+# Check the version provided adheres to semver
 if  echo "$1" | grep -o '[0-9]\+\.[0-9]\+\.[0-9]\+'
 then
     echo "Valid version provided"
@@ -13,10 +14,6 @@ else
     echo "Invalid version provided"
     exit
 fi
-
-
-
-#(echo "$1" | grep -o '[0-9]\+\.[0-9]\+\.[0-9]\+' ) && echo "Valid version provided." || echo "Invalid version provided"
 
 # Clone GovCMS locally
 cd /tmp
